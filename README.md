@@ -5,6 +5,7 @@
 # Contributers
 Louis Vinton
 Aiden Tracy
+Wes Beard
 Put your names here
 
 # AddMe
