@@ -1,11 +1,10 @@
 # This is the read me for the GitGood Team
 - [Contributers](#Contributers)
-- [Actual Stuff](#AddMe)
+- [How to Set Up](#HowTo)
 
 # Contributers
-Louis Vinton
-Aiden Tracy
+Louis Vinton, Aiden Tracy, Collin Westgate
 Put your names here
 
-# AddMe
-Add stuff to here later
+# HowTo
+Will add in the information required in issue #3 once it's ready to be done
