@@ -12,7 +12,10 @@ Put your names here
 
 # Actual Stuff
 This project uses the Vue.JS framework and the petfinder API  
-Add ideas for first three major features
+Features:
+* Display images and information from petfinder database
+* Create subpages with additional information
+* Create a menu system to navigate pages
 
 # Instructions  
 To set up and use the project locally, first make sure you have git installed on your system.  
