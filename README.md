@@ -8,6 +8,7 @@ Louis Vinton
 Aiden Tracy  
 Wes Beard  
 Collin Westgate  
+Tom Szpila
 Put your names here
 
 # Actual Stuff
@@ -16,6 +17,7 @@ Features:
 * Display images and information from petfinder database
 * Create subpages with additional information
 * Create a menu system to navigate pages
+* Create in interactive site using javascript
 
 # Instructions  
 To set up and use the project locally, first make sure you have git installed on your system.  
