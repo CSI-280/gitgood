@@ -1,7 +1,8 @@
 # This is the read me for the GitGood Team
-- [Contributers](#Contributers)
-- [Actual Stuff](Information)
-- [Instructions](Instructions)  
+- [This is the read me for the GitGood Team](#this-is-the-read-me-for-the-gitgood-team)
+- [Contributers](#contributers)
+- [Information](#information)
+- [Instructions](#instructions)
 
 # Contributers
 Louis Vinton  
@@ -11,7 +12,7 @@ Collin Westgate
 Tom Szpila
 Josh Bogin
 
-# Actual Stuff
+# Information
 This project uses the Vue.JS framework and the petfinder API  
 Features:
 * Display images and information from petfinder database
