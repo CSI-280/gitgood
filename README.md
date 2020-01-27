@@ -1,24 +1,34 @@
 # This is the read me for the GitGood Team
-- [Contributers](#Contributers)
+- [Contributors](#Contributers)
 - [Actual Stuff](Information)
 - [Instructions](Instructions)  
 
-# Contributers
+# Contributors
 Louis Vinton  
 Aiden Tracy  
 Wes Beard  
 Collin Westgate  
-Tom Szpila
+Tom Szpila  
 Josh Bogin
 
 # Actual Stuff
 This project uses the Vue.JS framework and the petfinder API  
-Features:
-* Display images and information from petfinder database
+Technical Features:
 * Create subpages with additional information
 * Create a menu system to navigate pages
-* Create in interactive site using javascript
+* Create in interactive site using JavaScript
 * Create a stylish web page using CSS
+Petfinder Features:
+* Display images and information from petfinder database
+* Create a table displaying pets for adoption.
+* Enable the user to search for a specific pet
+* Allow categorical searches for pets as well like:
+  * species
+  * gender
+  * age
+  * location
+  * status
+  * pet id
 
 # Instructions  
 To set up and use the project locally, first make sure you have git installed on your system.  
@@ -27,4 +37,4 @@ From there, in the repository, click the green "Clone or download" button and co
 
 Then, open your system's command prompt, navigate to the folder you want your local repository  
 to be in, and enter "git clone (the link you copied)". This will make a local copy of the
-repository for you where the HTML and Javascript can be changed and interacted with.
+repository for you where the HTML and JavaScript can be changed and interacted with.
