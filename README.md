@@ -1,5 +1,6 @@
 
-- [This is the read me for the GitGood Team](#this-is-the-read-me-for-the-gitgood-team)
+# GitGood Team ReadMe  
+
 - [Contributers](#contributers)
 - [Information](#information)
 - [Instructions](#instructions)
@@ -40,8 +41,13 @@ Then, open your system's command prompt, navigate to the folder you want your lo
 to be in, and enter "git clone (the link you copied)". This will make a local copy of the  
 repository for you where the Vue project can be changed and interacted with.  
 
-## Set up guide  
+### Set up guide  
+Make sure you have [npm](https://www.npmjs.com/get-npm) installed, you need it to download Vue  
 Check out the [instruction](https://vuejs.org/v2/guide/installation.html) for setting up Vue  
-Make sure you have [npm](https://www.npmjs.com/get-npm) installed  
 With npm installed and inside the Vue project you can run the command `npm run dev`  
 This should start an instance of the project which you can navigate to in your browser  
+
+### Helpful Resources  
+VueJS Local Setup & Routing [Guide](https://medium.com/@maeganwilson_/how-to-create-a-navigation-bar-in-vue-js-8a70e7f29f80)  
+VueJS Page Routing [Tutorial](https://www.thepolyglotdeveloper.com/2017/11/router-navigate-pages-vuejs-application/)  
+
