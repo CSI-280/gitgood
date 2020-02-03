@@ -1,9 +1,13 @@
 
 # GitGood Team ReadMe  
 
-- [Contributers](#contributers)
+- [GitGood Team ReadMe](#gitgood-team-readme)
+- [Contributors](#contributors)
 - [Information](#information)
 - [Instructions](#instructions)
+    - [Set up guide](#set-up-guide)
+    - [Working in Vue](#working-in-vue)
+    - [Helpful Resources](#helpful-resources)
 
 # Contributors
 Louis Vinton  
@@ -51,10 +55,23 @@ repository for you where the Vue project can be changed and interacted with.
 * To run the project run the command `npm run dev` inside the project directory,  
     This should run the project on localhost:8080 which you can go to in your browser   
     NOTE: (If working on OSX the default port 8080 will not work,  
-        you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port    
-        or just open another terminal and run it again which will put it on 8081)
+        you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port   
+        or just open another terminal and run it again which will put it on 8081)   
+
+### Working in Vue
+The main files you should work in when working in a view project are the files   
+in `src/components` which currently contains the home page and all other pages.
+
+NOTE: Don't change what's in `index.html`, the main html will get injected by Vue.
+   
+`App.vue` is the main file where you can edit the global CSS and JS, it currently redirects to the homepage.
+
+`src/router` contains the router files which control the file paths and redirects.
+
+`src/assets` can be used to store any assets needed for the main files.
+
 
 ### Helpful Resources  
 * VueJS Local Setup & Routing [Guide](https://medium.com/@maeganwilson_/how-to-create-a-navigation-bar-in-vue-js-8a70e7f29f80)  
 * VueJS Page Routing [Tutorial](https://www.thepolyglotdeveloper.com/2017/11/router-navigate-pages-vuejs-application/)  
-* VS Code has a Vue plugin that will make vue files easier to write in
+* VS Code has a Vue synatax plugin that will make vue files much easier to read
