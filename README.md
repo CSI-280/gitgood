@@ -51,7 +51,7 @@ repository for you where the Vue project can be changed and interacted with.
 * To run the project run the command `npm run dev` inside the project directory,  
     This should run the project on localhost:8080 which you can go to in your browser   
     NOTE: (If working on OSX the default port 8080 will not work,  
-        you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port 
+        you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port    
         or just open another terminal and run it again which will put it on 8081)
 
 ### Helpful Resources  
