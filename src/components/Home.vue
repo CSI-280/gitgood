@@ -1,16 +1,21 @@
 <template>
   <body>
-        <div class="nav-bar">
-            <div class="top-title">
-                <h1>git-a-pet</h1>
-            </div>
-        </div>
+    <div class="top-title">
+      <h1>git-a-pet</h1>
+    </div>
+    <div class="nav-bar">   
+        <h2>hi</h2>   
+        <!--Nav bar goes here -->
+    </div>
+    <div class="container">  
         <h2>This is the site for the gitgood team</h2>
-        
+
         <router-link to="/New">
           <button>Navigate to new page</button>
         </router-link>
-    </body>
+
+    </div>
+  </body>
 </template>
 
 <script>
@@ -27,24 +32,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   body {
+      height: 100%;
       font-family: 'Roboto', sans-serif;
       color:#282828;
       background: #FFFFFF;
       padding:0;
       margin:0;
       text-align:center;
-  }
-
-  .nav-bar {
       background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
-      height: 80px;
   }
 
-  .top-title {
+  .top-title { 
+      height: 80px;
       font-family: 'Roboto', sans-serif;
       text-align: center;
       color:#FFFFFF;
       font-size: 30px;   
+  }
+
+  .nav-bar {
+    height: 5%;
+    color: white;
   }
 
   button {
@@ -56,5 +64,19 @@ export default {
       width: 180px;
       font-size: 16px;
       border-radius: 15px;
-  } 
+  }
+
+  .container {
+      margin: auto;
+      width: 60%;
+      height: 80%;
+      float: center;
+      border-radius: 2em 2em 0em 0em;
+      background: white;
+      padding: 1%;
+  }
+
+  .cr-info {
+    color: white;
+  }
 </style>
