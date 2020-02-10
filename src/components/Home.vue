@@ -4,7 +4,10 @@
       <h1>git-a-pet</h1>
     </div>
     <div class="container">  
-        <h2>This is the site for the gitgood team</h2>
+      <h2>This is the site for the gitgood team</h2>
+      <router-link to="/New">
+        <button>Go to new page></button>
+      </router-link>
     </div>
   </div>
 </template>
