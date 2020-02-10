@@ -49,10 +49,8 @@ repository for you where the Vue project can be changed and interacted with.
 * Install [NPM](https://www.npmjs.com/get-npm)   
 * Open the project in your IDE of choice, I recommend Visual Studio Code   
 * Run the following commands in the project directory (VS Code has a built in terminal)   
-* `npm install vue`  
-* `npm install vue-router`  
-* `npm install -g @vue/cli`  
-* To run the project run the command `npm run dev` inside the project directory,  
+* `npm install vue`
+* To run the project run the command `npm run serve` inside the project directory,  
     This should run the project on localhost:8080 which you can go to in your browser   
     NOTE: (If working on OSX the default port 8080 will not work,  
         you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port   
