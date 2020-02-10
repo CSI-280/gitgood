@@ -60,7 +60,7 @@ repository for you where the Vue project can be changed and interacted with.
 The main files you should work in when working in a view project are the files   
 in `src/components` which currently contains the home page and all other pages.
 
-NOTE: Don't change what's in `index.html`, the main html will get injected by Vue.
+`index.html` contains all of the base html where `App` and the pages in `/components` are inserted
 
 `App.vue` is the main file where you can edit the global CSS and JS, it currently redirects to the homepage.
 
