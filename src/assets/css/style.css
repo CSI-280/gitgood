@@ -1,0 +1,52 @@
+html {
+    background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    height: 76.5vh;
+    float: center;
+    border-radius: 4em 4em 4em 4em;
+    background: white;
+    padding: 1%;
+}
+
+.top-title { 
+    height: 80px;
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 30px; 
+}
+
+#cr-info {
+  position: absolute;
+  bottom:15px;
+  left:19.3%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 61.5%;
+  color: black;
+  background-color: white;
+  border-radius: 4em 4em 4em 4em;
+}
+
+#app {
+  height: 100%;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    background-color: #ff6969;
+    color: white;
+    height: 60px;
+    width: 180px;
+    font-size: 16px;
+    border-radius: 15px;
+}

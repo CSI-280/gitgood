@@ -55,6 +55,7 @@ repository for you where the Vue project can be changed and interacted with.
     NOTE: (If working on OSX the default port 8080 will not work,  
         you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port   
         or just open another terminal and run it again which will put it on 8081)   
+* If you get the error `sh: vue-cli-service: command not found`, make sure that Vue installed correctly
 
 ### Working in Vue
 The main files you should work in when working in a view project are the files   
