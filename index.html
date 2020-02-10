@@ -6,7 +6,52 @@
     <title>git-a-pet</title>
   </head>
   <body>
+    <div id="navbar">
+      <router-link to="/New">
+        <button>Navigate to new page</button>
+      </router-link>
+    </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <footer>
+    <div id="cr-info">
+      <p>Copyright info</p>
+    </div>
+  </footer>
 </html>
+
+<style>
+  html {
+      background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+  }
+
+  #cr-info {
+    position: absolute;
+    bottom:0px;
+    left:19.3%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 61.4%;
+    color: black;
+    background-color: white;
+  }
+
+  #app {
+    height: 100%;
+  }
+
+  button {
+      margin-top: 20px;
+      border: none;
+      background-color: #ff6969;
+      color: white;
+      height: 60px;
+      width: 180px;
+      font-size: 16px;
+      border-radius: 15px;
+  }
+</style>
