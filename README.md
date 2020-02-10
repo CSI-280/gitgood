@@ -46,25 +46,24 @@ to be in, and enter "git clone (the link you copied)". This will make a local co
 repository for you where the Vue project can be changed and interacted with.  
 
 ### Set up guide  
-* Install [NPM](https://www.npmjs.com/get-npm)   
+* Install [NPM](https://www.npmjs.com/get-npm) and make sure it is up to date    
 * Open the project in your IDE of choice, I recommend Visual Studio Code   
 * Run the following commands in the project directory (VS Code has a built in terminal)   
-* `npm install vue`  
-* `npm install vue-router`  
-* `npm install -g @vue/cli`  
-* To run the project run the command `npm run dev` inside the project directory,  
+* Use the command `npm install vue` to install VueJS    
+* To run the project run the command `npm run serve` inside the project directory,  
     This should run the project on localhost:8080 which you can go to in your browser   
     NOTE: (If working on OSX the default port 8080 will not work,  
         you can instead [edit](https://github.com/vuejs/vue-cli/issues/36) the config files to change the port   
         or just open another terminal and run it again which will put it on 8081)   
+* If you get the error `sh: vue-cli-service: command not found`, make sure that Vue installed correctly
 
 ### Working in Vue
 The main files you should work in when working in a view project are the files   
 in `src/components` which currently contains the home page and all other pages.
 
-NOTE: Don't change what's in `index.html`, the main html will get injected by Vue.
+`public/index.html` contains all of the base html where `App` and the pages in `/components` are inserted
 
-`App.vue` is the main file where you can edit the global CSS and JS, it currently redirects to the homepage.
+`src/App.vue` is the main file that is injected into `index`, it currently redirects to `Home` in components
 
 `src/router` contains the router files which control the file paths and redirects.
 
