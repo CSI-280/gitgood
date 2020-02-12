@@ -24,13 +24,13 @@ html {
 }
 
 #cr-info {
-  position: absolute;
+  position: fixed;
   bottom:15px;
-  left:19.3%;
+  left:5%;
   text-align: center;
   color: white;
   margin: auto;
-  width: 61.5%;
+  width: 90%;
   color: black;
   background-color: white;
   border-radius: 4em 4em 4em 4em;
@@ -49,4 +49,15 @@ button {
     width: 180px;
     font-size: 16px;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+#toTopBtn {
+  /* make display hidden by default */
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 100px;
+  height: 45px;
+  width: 140px;
 }
