@@ -31,12 +31,10 @@ html {
 }
 
 #cr-info {
-  position: fixed;
   width: 71%;
   height: 5vh;
-  left: 14.5%;
-  bottom: 2.5%;
-  padding: 5px;
+  padding-top: 5px;
+  margin: auto;
   box-sizing: content-box;
   color: black;
   font-size: 16px;
@@ -48,7 +46,8 @@ html {
 .container {
   margin: auto;
   width: 70%;
-  height: 70vh;
+  height: auto;
+  min-height: 70vh;
   float: center;
   border-radius: 4em 4em 4em 4em;
   background: white;
@@ -75,8 +74,8 @@ button {
   /* make display hidden by default */
   display: none;
   position: fixed;
-  bottom: 26px;
-  right: 225px;
+  bottom: 2vh;
+  right: 2vw;
   height: 30px;
   width: 110px;
 }

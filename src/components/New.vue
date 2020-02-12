@@ -3,6 +3,28 @@
     <div id="body">
         <div class="container">
             <h1> This is a new page </h1>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
+            <p>Info</p>
             <router-link to="/Home">
                 <button>Navigate back to home</button>
             </router-link>
