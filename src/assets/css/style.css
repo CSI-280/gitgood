@@ -1,3 +1,4 @@
+
 html {
     background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
     font-family: 'Roboto', sans-serif;
@@ -6,34 +7,53 @@ html {
     margin: 0;
 }
 
-.container {
-    margin: auto;
-    width: 60%;
-    height: 76.5vh;
-    float: center;
-    border-radius: 4em 4em 4em 4em;
-    background: white;
-    padding: 1%;
+.top-box { 
+  box-sizing: content-box;
+  text-align: center;
 }
 
-.top-title { 
-    height: 80px;
-    text-align: center;
-    color:#FFFFFF;
-    font-size: 30px; 
+.top-logo {
+  vertical-align: middle;
+}
+
+.top-title {
+  color:#FFFFFF;
+  font-size: 70px;
+  vertical-align: middle;
+}
+
+.content {
+  width: auto;
+  height: auto;
+  box-sizing: content-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #cr-info {
-  position: absolute;
-  bottom:15px;
-  left:19.3%;
-  text-align: center;
-  color: white;
-  margin: auto;
-  width: 61.5%;
+  width: 71%;
+  height: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: content-box;
   color: black;
+  font-size: 16px;
+  text-align: center;
   background-color: white;
   border-radius: 4em 4em 4em 4em;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  height: 70vh;
+  float: center;
+  border-radius: 4em 4em 4em 4em;
+  background: white;
+  padding: 1%;
 }
 
 #app {
@@ -41,12 +61,12 @@ html {
 }
 
 button {
-    margin-top: 20px;
-    border: none;
-    background-color: #ff6969;
-    color: white;
-    height: 60px;
-    width: 180px;
-    font-size: 16px;
-    border-radius: 15px;
+  margin-top: 20px;
+  border: none;
+  background-color: #ff6969;
+  color: white;
+  height: 60px;
+  width: 180px;
+  font-size: 16px;
+  border-radius: 15px;
 }
