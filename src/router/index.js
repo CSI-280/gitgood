@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import New from '@/components/New'
+import Dogs from '@/components/Dogs'
+import Cats from '@/components/Cats'
+import Other from '@/components/Other'
 
 Vue.use(Router)
 
@@ -19,9 +21,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/New',
-      name: 'New',
-      component: New
+      path: '/Dogs',
+      name: 'Dogs',
+      component: Dogs
+    },
+    {
+      path: '/Cats',
+      name: 'Cats',
+      component: Cats
+    },
+    {
+      path: '/Other',
+      name: 'Other',
+      component: Other
     }
   ]
 })
