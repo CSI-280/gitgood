@@ -17,9 +17,40 @@
   <footer>
     <div id="cr-info">
       <p>©2020 Team GitGood</p>
+      <button onclick="topFunction()" id="toTopBtn" title="Go to top">Back To Top</button>
     </div>
   </footer>
 </html>
+
+<script>
+    // get button
+    mybutton = document.getElementById("toTopBtn");
+
+    // button shows when user scrolls down 20px from the top
+    window.onscroll = function () 
+    { 
+      scrollToTop() 
+    };
+
+    // function to make button appear after scrolling
+    function scrollToTop() 
+    {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+      {
+        mybutton.style.display = "block";
+      } 
+      else 
+      {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // scroll to the top of the document when button is clicked
+    function topFunction() 
+    {
+      document.documentElement.scrollTop = 0;
+    }
+</script>
 
 <style>
   html {

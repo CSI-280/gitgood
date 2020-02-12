@@ -31,12 +31,11 @@ html {
 }
 
 #cr-info {
+  position: fixed;
   width: 71%;
   height: 5vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  left: 14.5%;
+  bottom: 2.5%;
   padding: 5px;
   box-sizing: content-box;
   color: black;
@@ -69,4 +68,15 @@ button {
   width: 180px;
   font-size: 16px;
   border-radius: 15px;
+  cursor: pointer;
+}
+
+#toTopBtn {
+  /* make display hidden by default */
+  display: none;
+  position: fixed;
+  bottom: 26px;
+  right: 225px;
+  height: 30px;
+  width: 110px;
 }
