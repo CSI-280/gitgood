@@ -2,10 +2,69 @@
   <div id="body">
     
     <div class="container">  
-      <h2>This is the site for the gitgood team</h2>
-      <router-link to="/New">
-        <button>Navigate to a new page</button>
+      <h1>Welcome to the GitGood Adoption Site!</h1>
+      <router-link to="/Home">
+        <button>Home</button>
       </router-link>
+      <router-link to="/Dogs">
+        <button>Dogs</button>
+      </router-link>
+      <router-link to="/Cats">
+        <button>Cats</button>
+      </router-link>
+      <router-link to="/Other">
+        <button>Other</button>
+      </router-link>
+      <p>text here...</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>text in between...</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>text in between...</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>text in between...</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>end of text.</p>
     </div>
   </div>
 </template>
