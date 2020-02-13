@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>git-a-pet</title>
   </head>
-  <body>
+  <body onload="getGeodata()">
     <div style="text-align: center">
       <img class = "top-logo" src="logo.png" height=100 width=100>
       <span class="top-title">git-a-pet</span>
@@ -52,6 +52,21 @@
     {
       document.documentElement.scrollTop = 0;
     }
+	
+	var i = function(pos) {					//gets actual geolocation			
+		var lat = pos.coords.latitude;
+		var long = pos.coords.longitude;
+		var coords = lat + ", " + long;		//coordinates of user (within a km or so)
+		
+		//alert(coords);
+	}
+	
+	function getGeodata()					//run onload to call for location
+	{
+		navigator.geolocation.getCurrentPosition(i);
+		return false;
+	}
+		
 </script>
 
 <style>
