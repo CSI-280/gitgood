@@ -47,6 +47,7 @@ function scrollToTop() {
 
 // scroll to the top of the document when button is clicked
 function topFunction() {
-  document.documentElement.scrollTop = 0;
+  // smooth animation for scrolling
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
