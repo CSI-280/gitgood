@@ -1,5 +1,4 @@
 <template>
-
     <div id="body">
         <div class="container">  
           <h1>Other Pets Can Be Found Here!</h1>
@@ -18,6 +17,8 @@
           <h3>
           <p>This box will expand as stuff is added.</p>
           </h3>
+
+          <button onclick="dothing" id="button">Button</button>
         </div>
     </div>
 </template>

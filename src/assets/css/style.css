@@ -32,7 +32,7 @@ html {
 
 #cr-info {
   width: 71%;
-  height: 5vh;
+  height: 6vh;
   padding-top: 5px;
   margin: auto;
   box-sizing: content-box;
@@ -80,4 +80,13 @@ button {
   right: 2vw;
   height: 30px;
   width: 110px;
+}
+
+.image-wrapper {
+  width: auto;
+  height: auto;
+  margin: 4px;
+  border: 5px solid #9500ff;
+  float: left;
+  border-radius: 2em 2em 2em 2em;
 }
