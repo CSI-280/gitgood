@@ -13,7 +13,7 @@
             <router-link to="/Other">
                 <button>Other</button>
             </router-link>
-
+            <hr width=100%>
             <div class="bold">
                 <p>Let Us Help You Find the Perfect Animal...</p>
             </div>

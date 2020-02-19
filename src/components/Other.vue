@@ -1,7 +1,6 @@
 <template>
     <div id="body">
         <div class="container">
-            <h1>Other Pets Can Be Found Here!</h1>
             <router-link to="/Home">
                 <button>Home</button>
             </router-link>
@@ -14,6 +13,8 @@
             <router-link to="/Other">
                 <button>Other</button>
             </router-link>
+            <hr width=100%>
+            <h1>Other Pets Can Be Found Here!</h1>
             <h1>What is the project?</h1>
             <p>
                 This project was created by the gitgood team for various Git assignments,
