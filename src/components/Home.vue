@@ -71,14 +71,19 @@
                 <p>Contact Us:</p>
             </div>
             <div class="contact-info">
-                <p>git-a-pet LLC</p>
-                <p>(802) 867 5309 </p>
-                <p>git-a-pet@mymail.champlain.edu</p>
-                <p>375 Maple St. Burlington, VT 05401</p>
-                <p>Joyce Hall Room 210</p>
-                <p>Mondays & Wednesdays 5:00 - 6:15pm</p>
+                <div class="contact-text">
+                    <p>Team GitGood</p>
+                    <p>(802) 867 5309 </p>
+                    <p>git-a-pet@mymail.champlain.edu</p>
+                    <p>375 Maple St. Burlington, VT 05401</p>
+                    <p>Joyce Hall Room 210</p>
+                    <p>Mondays & Wednesdays 5:00 - 6:15pm</p>
+                </div>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-73.20615559816362%2C44.47204183438044%2C-73.20167630910875%2C44.473884991047704&amp;layer=mapnik&amp;marker=44.472963419990556%2C-73.20391595363617" 
+                id="map"></iframe><br/>
             </div>
-            <div id="map"></div>
+            <br>
       </div>
   </div>
 </template>
@@ -104,7 +109,6 @@
     }
 
     .text {
-
         text-align: center;
         vertical-align: middle;
         font-size: 30pt;
@@ -125,15 +129,21 @@
     }
 
     .contact-info {
+        display: flex;
+    }
+
+    .contact-text {
         margin-left: 10vw;
         text-align: left;
         font-size: 16pt;
+        margin-right: 15vw;
     }
 
     #map {
-        height: 10vh;
-        width: auto;  
-        float: right;
+        border: 2px solid black;
+        width: 15vw;
+        height: 15vw;
+        margin-top: 1vh;
     }
 
 </style>
