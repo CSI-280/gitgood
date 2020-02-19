@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Dogs from '@/components/Dogs'
 import Cats from '@/components/Cats'
-import Other from '@/components/Other'
+import Other from '@/components/About'
 
 Vue.use(Router)
 
@@ -31,8 +31,8 @@ export default new Router({
       component: Cats
     },
     {
-      path: '/Other',
-      name: 'Other',
+      path: '/About',
+      name: 'About',
       component: Other
     }
   ]
