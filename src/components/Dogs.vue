@@ -11,11 +11,25 @@
 </template>
 
 <script>
+    import { Client } from "@petfinder/petfinder-js";
+
     export default {
         name: 'New',
-        data () {
+        data () 
+        {
             return {
                 msg: 'This is a new page'
+            }
+        },
+        methods: {
+            getToken: function () {
+                const client = new Client({ apiKey: "HB4E0LPBodtgXJlBVOYvZSDaxgGSCA7Li7Eq6tqb6uVDRfzAp4", secret: "ACCq1YmJ2XzZxT6WrvbSU9voepnbCllw0NmSF363" });
+
+                client.animal.search()
+                    .then(function (response) {
+                        // Do something with resp.data.animals
+                        console.dir(response.data.animals)
+                    });
             }
         }
     }
