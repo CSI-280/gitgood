@@ -32,13 +32,14 @@ html {
 
 #cr-info {
   width: 71%;
-  height: 6vh;
-  padding-top: 5px;
+  height: 5vh;
+  padding-top: .5vh;
   margin: auto;
   box-sizing: content-box;
   color: black;
   font-size: 16px;
   text-align: center;
+  vertical-align: middle;
   background-color: white;
   border-radius: 4em 4em 4em 4em;
 }
@@ -73,7 +74,6 @@ button {
 }
 
 #toTopBtn {
-  /* make display hidden by default */
   display: none;
   position: fixed;
   bottom: 2vh;
