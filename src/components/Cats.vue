@@ -2,19 +2,6 @@
 
     <div id="body">
         <div class="container">  
-          <router-link to="/Home">
-            <button>Home</button>
-          </router-link>
-          <router-link to="/Dogs">
-            <button>Dogs</button>
-          </router-link>
-          <router-link to="/Cats">
-            <button>Cats</button>
-          </router-link>
-          <router-link to="/Other">
-            <button>Other</button>
-          </router-link>
-          <hr width=100%>
           <h1>Find the Cat For You!</h1>
           <h3>
           <p>This box will expand as stuff is added.</p>

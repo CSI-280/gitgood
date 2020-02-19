@@ -1,19 +1,6 @@
 <template>
     <div id="body">
         <div class="container">
-            <router-link to="/Home">
-                <button>Home</button>
-            </router-link>
-            <router-link to="/Dogs">
-                <button>Dogs</button>
-            </router-link>
-            <router-link to="/Cats">
-                <button>Cats</button>
-            </router-link>
-            <router-link to="/Other">
-                <button>Other</button>
-            </router-link>
-            <hr width=100%>
             <h1>Other Pets Can Be Found Here!</h1>
             <h1>What is the project?</h1>
             <p>
