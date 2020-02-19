@@ -15,22 +15,48 @@
           <router-link to="/Other">
             <button>Other</button>
           </router-link>
-          <h3>
-          <p>This box will expand as stuff is added.</p>
-          </h3>
+        </div>
+        <div id="pfData">
         </div>
     </div>
 </template>
 
-<script>
-    export default {
-        name: 'New',
-        data () {
-            return {
-                msg: 'This is a new page'
-            }
-        }
-    }
+<script src="https://code.jquery.com/jquery-3.4.1.js">
+  import { Client } from "@petfinder/petfinder-js";
+  import { Animal } from '@petfinder/petfinder-js/dist/api/animal';
+
+  export default {
+  name: 'Cats',
+  data () {
+      return {
+      msg: 'Catspage'
+      }
+  },
+      methods: {
+          getToken: function () {
+              const client = new Client({ apiKey: "HB4E0LPBodtgXJlBVOYvZSDaxgGSCA7Li7Eq6tqb6uVDRfzAp4", secret: "ACCq1YmJ2XzZxT6WrvbSU9voepnbCllw0NmSF363" });
+              var output = document.getElementById("pfData");
+              format = JSON;
+
+              $(document).ready(function () {
+                $.getJSON(Client, function(data) {
+                  var cat_data = '';
+                  $.each(data, function(key, value) {
+                    cat_data += '<tr>';
+                    cat_data += '<td>' + value.name + '</td>';
+                    cat_data += '<td>' + value.animal + '</td>';
+                    cat_data += '<td>' + value.breed + '</td>';
+                    cat_data += '<td>' + value.shelterid + '</td>';
+                    cat_data += '<td>' + value.primaryphoto + '</td>';
+                    cat_data += '</tr>';
+                  })
+                })
+              });
+              console.log("hi")
+              console.log(client$pet.getRandom(output = 'basic'))
+          }
+      }
+  }
 </script>
 
 <style scoped>

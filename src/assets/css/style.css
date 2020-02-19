@@ -31,11 +31,12 @@ html {
 }
 
 #cr-info {
-  width: 71%;
-  height: 6vh;
-  padding-top: 5px;
+  width: 72%;
+  height: 5vh;
   margin: auto;
-  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   font-size: 16px;
   text-align: center;
@@ -73,7 +74,6 @@ button {
 }
 
 #toTopBtn {
-  /* make display hidden by default */
   display: none;
   position: fixed;
   bottom: 2vh;
