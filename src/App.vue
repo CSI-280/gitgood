@@ -10,8 +10,8 @@
     <router-link to="/Cats">
       <button>Cats</button>
     </router-link>
-    <router-link to="/Other">
-      <button>Other</button>
+    <router-link to="/About">
+      <button>About</button>
     </router-link>
     <router-view/>
   </div>
