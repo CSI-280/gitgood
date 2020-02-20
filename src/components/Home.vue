@@ -167,7 +167,7 @@
 		
 		alert(coords);
 	}
-	
+
 		//run onload to call for location
 		navigator.geolocation.getCurrentPosition(i);
 	
