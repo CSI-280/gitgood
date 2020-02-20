@@ -1,26 +1,13 @@
 <template>
     <div id="body">
         <div class="container">
-            <h1>Other Pets Can Be Found Here!</h1>
-            <router-link to="/Home">
-                <button>Home</button>
-            </router-link>
-            <router-link to="/Dogs">
-                <button>Dogs</button>
-            </router-link>
-            <router-link to="/Cats">
-                <button>Cats</button>
-            </router-link>
-            <router-link to="/Other">
-                <button>Other</button>
-            </router-link>
             <h1>What is the project?</h1>
-            <p>
+            <h2>
                 This project was created by the gitgood team for various Git assignments,
-                for CSI280, a class at Champlain College currently taught by Chris Bechdel.
+                for CSI280, a class at Champlain College currently taught by Chris Bendel.
                 Created mostly as a way demonstrating project management and git usage, the
                 site mostly exists as a consequence of this.
-            </p>
+            </h2>
             <h4> You can read more about Chris <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a>. </h4>
             <h1>About Us!</h1>
             <h3>
@@ -49,7 +36,7 @@
         name: 'New',
         data () {
             return {
-                msg: 'This is a new page'
+                msg: 'About'
             }
         }
     }
