@@ -66,7 +66,7 @@
                     <p>Joyce Hall Room 210</p>
                     <p>Mondays & Wednesdays 5:00 - 6:15pm</p>
                 </div>
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onload="geodata()"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-73.20615559816362%2C44.47204183438044%2C-73.20167630910875%2C44.473884991047704&amp;layer=mapnik&amp;marker=44.472963419990556%2C-73.20391595363617" 
                 id="map"></iframe><br/>
             </div>
@@ -157,6 +157,20 @@
             }
         }
     }
+	
+	var i = function(pos) {					//gets actual geolocation			
+		var lat = pos.coords.latitude;
+		var long = pos.coords.longitude;
+		var coords = lat + ", " + long;		//coordinates of user (within a km or so)
+		
+		document.getElementById('map').setAttribute('src', 'https://www.openstreetmap.org/export/embed.html?bbox='+ long +'%2C'+ lat +'%2C'+ long +'%2C'+ lat +'&amp;layer=mapnik&amp;marker='+ lat +'%2C'+ long)
+		
+		alert(coords);
+	}
+
+		//run onload to call for location
+		navigator.geolocation.getCurrentPosition(i);
+	
 </script>
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy8dIBq1bMiakJ14qeOU8zy4JikdeHMco&callback=initMap"></script>-->
     <meta charset="utf-8">
@@ -36,6 +37,7 @@
           zoom: 19
       });
     }
+
 
     window.onload = initMap();
     */
@@ -89,12 +91,30 @@
 
   //grabs geodata on load
   window.onload = getGeodata();
-</script>
 
-<style>
-  html {
-      background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-  }
-</style>
+</script>
+<script>
+    // get button
+    mybutton = document.getElementById("toTopBtn");
+
+    // button shows when user scrolls down 20px from the top
+    window.onscroll = function () {
+      scrollToTop()
+    };
+
+    // function to make button appear after scrolling
+    function scrollToTop() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      }
+      else {
+        mybutton.style.display = "none";
+      }
+    }
+    // scroll to the top of the document when button is clicked
+    function topFunction() {
+      // smooth animation for scrolling
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+</script>
