@@ -51,5 +51,5 @@
       margin:0;
       text-align:center;
       background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
-  }
+    }
 </style>
