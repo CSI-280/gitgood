@@ -13,7 +13,7 @@
             <hr width=80%>
           <div id="pfData">
           </div>
-          <button v-on:click="getCats(), getToken()">Refresh</button>
+          <button v-on:click="getCats(), getToken()"><i class="fas fa-sync"></i> Refresh</button>
           <p>Contact Us For Help and More Information About Our Pets!</p>
         </div>
     </div>
