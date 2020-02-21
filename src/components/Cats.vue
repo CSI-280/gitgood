@@ -2,22 +2,18 @@
 
     <div id="body">
         <div class="container">  
-          <h1>Find the Cat For You!</h1>
-          <router-link to="/Home">
-            <button>Home</button>
-          </router-link>
-          <router-link to="/Dogs">
-            <button>Dogs</button>
-          </router-link>
-          <router-link to="/Cats">
-            <button>Cats</button>
-          </router-link>
-          <router-link to="/Other">
-            <button>Other</button>
-          </router-link>
+          <h1>Find the Perfect Cat!</h1>
+          <hr width=80%>
+          <h2>Your Location:</h2>
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-73.20615559816362%2C44.47204183438044%2C-73.20167630910875%2C44.473884991047704&amp;layer=mapnik&amp;" 
+              id="map" class="pet-map">
+            </iframe>
+			<br></br>
+            <hr width=80%>
           <div id="pfData">
           </div>
-          <button v-on:click="getCats(), getToken()">Generate</button>
+          <button v-on:click="getCats(), getToken()">Refresh</button>
           <p>Contact Us For Help and More Information About Our Pets!</p>
         </div>
     </div>
@@ -32,6 +28,11 @@
   import { Animal } from '@petfinder/petfinder-js/dist/api/animal';
 
 export default {
+  mounted:function() {
+    this.getCats();
+    this.getToken();
+	this.updateLocation();
+  },
   name: 'Cats',
   data () {
       return {
@@ -47,11 +48,10 @@ export default {
                     console.dir(response.data.animals)
                 });
         },
+		
         getCats: function () {
           const client = new Client({ apiKey: "HB4E0LPBodtgXJlBVOYvZSDaxgGSCA7Li7Eq6tqb6uVDRfzAp4", secret: "rr6C5OrDLoCg3mP0rk4ztxVTLw3sHwgmvUUMf3zn" });
           var tableOutput = document.getElementById("pfData");
-          
-          console.log("made it....");
 
           client.animal.search()
           .then(function (response){
@@ -63,7 +63,7 @@ export default {
               {
                 if (item.photos.length > 0) {
                   var petPic = item.photos[0].medium;
-                  tableOutput.innerHTML += "<img src=" + petPic + ">";
+                  tableOutput.innerHTML += "<img class='pet-wrapper'src=" + petPic + ">";
                 }
                 var petName = item.name;
                 var petID = item.id;
@@ -76,6 +76,7 @@ export default {
                 tableOutput.innerHTML += "<h3>Breed: " + breed + "</h3>";
                 tableOutput.innerHTML += "<h3>Size: " + petSize + "</h3>";
                 tableOutput.innerHTML += "<h3>" + petDescription + "</h3><br>";
+                tableOutput.innerHTML += "<hr width=80%>";
               }
               else
               {
@@ -84,26 +85,23 @@ export default {
             }
           });
       },
-        created: function() {
-          this.getCats();
-          this.getToken();
-        }
+	  updateLocation: function () {
+		var i = function(pos) {					//gets actual geolocation			
+			var lat = pos.coords.latitude;
+			var long = pos.coords.longitude;
+			var coords = lat + ", " + long;		//coordinates of user (within a km or so)
+		
+			document.getElementById('map').setAttribute('src', 'https://www.openstreetmap.org/export/embed.html?bbox='+ long +'%2C'+ lat +'%2C'+ long +'%2C'+ lat +'&amp;layer=mapnik&amp;marker='+ lat +'%2C'+ long)
+		}
+			//run onload to call for location
+			navigator.geolocation.getCurrentPosition(i);
+	},
   }
 }
 </script>
 
 <style scoped>
-    #body {
-      height: 80%;
-      color:#282828;
-      background: #FFFFFF;
-      padding:0;
-      margin:0;
-      text-align:center;
-      background: linear-gradient(-90deg, #febc55, #ff6969, #9500ff);
-    }
     #pfData {
       font: bold;
-
     }
 </style>
